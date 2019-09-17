@@ -6,4 +6,4 @@ const app = express();
 require("./routes/index.js")(app)
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(basicAuth({ users: config.apiKeys }))
-app.listen(3000, () => console.log("Listening on port 3000"));
+app.listen(80, () => console.log("Listening on port 80"));
